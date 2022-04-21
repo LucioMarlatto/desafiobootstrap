@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="img/faviconV2.png"/>
 
-    
     <!-- CSS -->
 
     <link 
@@ -18,6 +17,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
+      <link rel="stylesheet" href="css/style.css">
     <title>Inicio</title>
   </head>
   <body>
@@ -25,7 +25,7 @@
     <!-- Inicio de header -->
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark border border-dark ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark border border-dark header__nav">
         <button
           class="navbar-toggler bg-secondary"
           type="button"
@@ -36,8 +36,9 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav px-4 d-flex justify-content-center">
+        <div class="collapse navbar-collapse header__nav" id="navbarNavAltMarkup">
+          <a href="index.html"><img src="img/logo.png" alt=""></a>
+          <div class="navbar-nav px-4 d-flex justify-content-center nav__header--sticky">
             <a class="nav-item nav-link active text-white" href="index.html">Inicio </a>
             <a class="nav-item nav-link text-white" href="pages/placasdevideo.html">Placas de Video</a>
             <a class="nav-item nav-link text-white" href="pages/monitores.html">Monitores</a>

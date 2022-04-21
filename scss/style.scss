@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 1000px) {
+  .header__nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    img {
+      height: auto;
+      width: auto;
+      justify-content: flex-start;
+    }
+  }
+  .nav__header--sticky {
+    position: sticky;
+    a {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__nav img {
+    display: none;
+  }
+}
