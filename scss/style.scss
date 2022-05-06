@@ -39,6 +39,9 @@ $headings: (
       justify-content: flex-start;
     }
   }
+  .btn__placas {
+    text-align: center;
+  }
   .nav__header--sticky {
     position: sticky;
     a {
@@ -60,16 +63,12 @@ $headings: (
       border-style: solid;
       border-color: white;
     }
-    .container__placas {
-      @extend .container__monitores;
-    }
-    .container__faq {
-      @extend .container__monitores;
-    }
   }
-
-  .btn__placas {
-    text-align: center;
+  .container__placas {
+    @extend .container__monitores;
+  }
+  .container__faq {
+    @extend .container__monitores;
   }
 
   $h1: map-get($headings, h1);

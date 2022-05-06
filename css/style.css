@@ -16,6 +16,10 @@
     justify-content: flex-start;
   }
 
+  .btn__placas {
+    text-align: center;
+  }
+
   .nav__header--sticky {
     position: sticky;
   }
@@ -23,19 +27,16 @@
     font-size: 25px;
   }
 
-  .container__monitores, .container__monitores .container__faq, .container__monitores .container__placas {
+  .container__monitores, .container__faq, .container__placas {
     background: rgb(73, 70, 70);
     background: linear-gradient(90deg, rgb(73, 70, 70) 5%, rgb(0, 0, 0) 54%, rgb(73, 70, 70) 100%);
     color: white;
     font-weight: bold;
   }
-  .container__monitores img, .container__monitores .container__faq img, .container__monitores .container__placas img {
+  .container__monitores img, .container__faq img, .container__placas img {
     border-width: 1px;
     border-style: solid;
     border-color: white;
-  }
-  .btn__placas {
-    text-align: center;
   }
 
   p {
