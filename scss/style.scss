@@ -64,12 +64,17 @@ $headings: (
       border-color: white;
     }
   }
+
+  // Extend
+
   .container__placas {
     @extend .container__monitores;
   }
   .container__faq {
     @extend .container__monitores;
   }
+
+  // map-get
 
   $h1: map-get($headings, h1);
   p {
