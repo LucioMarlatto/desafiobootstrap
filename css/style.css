@@ -22,6 +22,44 @@
   .nav__header--sticky a {
     font-size: 25px;
   }
+
+  .container__monitores, .container__faq, .container__placas {
+    background: rgb(73, 70, 70);
+    background: linear-gradient(90deg, rgb(73, 70, 70) 5%, rgb(0, 0, 0) 54%, rgb(73, 70, 70) 100%);
+    color: white;
+    font-weight: bold;
+  }
+  .container__monitores img, .container__faq img, .container__placas img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+  }
+
+  .btn__placas {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .container__cards {
+    background-color: rgb(59, 57, 57);
+    text-align: center;
+    color: white;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+  }
+
+  .cards {
+    background: rgb(73, 70, 70);
+    background: linear-gradient(90deg, rgb(73, 70, 70) 5%, rgb(0, 0, 0) 54%, rgb(73, 70, 70) 100%);
+  }
 }
 @media (max-width: 1000px) {
   .header__nav img {

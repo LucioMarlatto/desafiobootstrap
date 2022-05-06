@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+// Map
+
+$headings: (
+  h1: 1.2em,
+  h2: 3em,
+  h3: 2em,
+  h4: 1em,
+  h5: 0.75em,
+  h6: 0.35em,
+);
+
+// mixin
+
+@mixin cards {
+  background-color: rgb(59, 57, 57);
+  text-align: center;
+  color: white;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
+}
+
+// Media Queries
+
 @media (min-width: 1000px) {
   .header__nav {
     display: flex;
@@ -19,6 +44,55 @@
     a {
       font-size: 25px;
     }
+  }
+  .container__monitores {
+    background: rgb(73, 70, 70);
+    background: linear-gradient(
+      90deg,
+      rgba(73, 70, 70, 1) 5%,
+      rgba(0, 0, 0, 1) 54%,
+      rgba(73, 70, 70, 1) 100%
+    );
+    color: white;
+    font-weight: bold;
+    img {
+      border-width: 1px;
+      border-style: solid;
+      border-color: white;
+    }
+  }
+
+  
+
+  .container__placas {
+    @extend .container__monitores;
+  }
+  .container__faq {
+    @extend .container__monitores;
+  }
+  .btn__placas {
+    text-align: center;
+  }
+
+  $h1: map-get($headings, h1);
+  p {
+    font-size: $h1;
+  }
+  $h3: map-get($headings, h2);
+  h2 {
+    font-size: $h3;
+  }
+  .container__cards {
+    @include cards;
+  }
+  .cards {
+    background: rgb(73, 70, 70);
+    background: linear-gradient(
+      90deg,
+      rgba(73, 70, 70, 1) 5%,
+      rgba(0, 0, 0, 1) 54%,
+      rgba(73, 70, 70, 1) 100%
+    );
   }
 }
 
