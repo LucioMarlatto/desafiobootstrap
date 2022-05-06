@@ -60,16 +60,14 @@ $headings: (
       border-style: solid;
       border-color: white;
     }
+    .container__placas {
+      @extend .container__monitores;
+    }
+    .container__faq {
+      @extend .container__monitores;
+    }
   }
 
-  
-
-  .container__placas {
-    @extend .container__monitores;
-  }
-  .container__faq {
-    @extend .container__monitores;
-  }
   .btn__placas {
     text-align: center;
   }
